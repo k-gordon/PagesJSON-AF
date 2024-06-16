@@ -20,7 +20,7 @@
         "displayName": "Retainer",
         "type": "boolean"
       }
-    ]
+    ],
     "result": {
       "type": "string"
     }
