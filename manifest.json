@@ -4,17 +4,17 @@
     "author": "Kenny",
     "params": [
       {
-        "name": "p1",
+        "name": "lower",
         "displayName": "Lower Arch Range",
         "type": "string"
       },
       {
-        "name": "p2",
+        "name": "upper",
         "displayName": "Upper Arch Range",
         "type": "string"
       },
       {
-        "name": "p3",
+        "name": "retainer",
         "displayName": "Retainer",
         "type": "string"
       }
