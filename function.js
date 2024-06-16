@@ -39,3 +39,6 @@ window.function = function (p1, p2, p3 = { value: false }) {
   // Return the array of objects directly
   return generateJSON(p1, p2, p3);
 }
+
+const result = window.function(p1, p2, p3);
+console.log(result);
