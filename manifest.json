@@ -20,6 +20,6 @@
       }
     ],
     "result": {
-      "type": "string"
+      "type": "array"
     }
   }
