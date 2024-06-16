@@ -36,6 +36,10 @@ window.function = function (p1, p2, p3 = { value: false }) {
     return result;
   }
 
+  const p1 = range1;
+  const p2 = range2;
+  const p3 = retainer;
+  
   // Return the array of objects directly
   return generateJSON(p1, p2, p3);
 }
