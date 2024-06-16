@@ -1,7 +1,7 @@
 [
   {
     "kind": "column",
-    "name": "Getages from",
+    "name": "Get pages from range",
     "description": "Gets pages from input ranges",
     "author": "Kenny <kenny@archform.co>",
     "params": [
