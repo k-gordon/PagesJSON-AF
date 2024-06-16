@@ -1,0 +1,22 @@
+{
+  "inputs": [
+      {
+          "name": "stringInput",
+          "type": "string",
+          "description": "The string you want to extract the substring from"
+      },
+      {
+          "name": "startIndex",
+          "type": "number",
+          "description": "The start index of the substring"
+      },
+      {
+          "name": "endIndex",
+          "type": "number",
+          "description": "The end index of the substring"
+      }
+  ]
+  "result": {
+      "type": "string"
+            }
+}
