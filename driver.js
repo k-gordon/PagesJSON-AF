@@ -1,25 +1,17 @@
 window.addEventListener("message", async function(event) {
   const { origin, data: { key, params } } = event;
+  console.log("message", origin, key, params);
 
   let result;
-  let error;
   try {
     result = await window.function(...params);
   } catch (e) {
     result = undefined;
-    try {
-      error = e.toString();
-    } catch (e) {
-      error = "Exception can't be stringified.";
-    }
   }
 
   const response = { key };
   if (result !== undefined) {
-    response.result = { value: result };
-  }
-  if (error !== undefined) {
-    response.error = error;
+    response.result = { type: "string", value: result };
   }
 
   event.source.postMessage(response, "*");
