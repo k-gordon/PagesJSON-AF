@@ -1,4 +1,5 @@
-function generateJSON(p1, p2, p3) {
+window.function = function (p1, p2, p3) {
+  function generateJSON(p1, p2, p3) {
     let result = [];
 
     // Convert string ranges to arrays of numbers
@@ -11,26 +12,35 @@ function generateJSON(p1, p2, p3) {
 
     // Generate the objects for the range
     for (let i = min; i <= max; i++) {
-        let stage1dValue;
-        let stage2dValue;
+      let stage1dValue;
+      let stage2dValue;
 
-        if (i == 0) {
-            stage1dValue = "Attachment Template";
-            stage2dValue = "AT";
-        } else if (i === max && p3) {
-            stage1dValue = "Retainer";
-            stage2dValue = "RT";
-        } else {
-            stage1dValue = i.toString();
-            stage2dValue = i.toString().padStart(2, '0');
-        }
+      if (i == 0) {
+        stage1dValue = "Attachment Template";
+        stage2dValue = "AT";
+      } else if (i === max && p3) {
+        stage1dValue = "Retainer";
+        stage2dValue = "RT";
+      } else {
+        stage1dValue = i.toString();
+        stage2dValue = i.toString().padStart(2, '0');
+      }
 
-        result.push({
-            frameID: "1",
-            "stage-1d": stage1dValue,
-            "stage-2d": stage2dValue
-        });
+      result.push({
+        frameID: "1",
+        "stage-1d": stage1dValue,
+        "stage-2d": stage2dValue
+      });
     }
 
     return result;
+  }
+
+  // Extract the `.value` from each parameter
+  p1 = p1.value;
+  p2 = p2.value;
+  p3 = p3.value ?? false;
+
+  // Call the generateJSON function and return the result
+  return JSON.stringify(generateJSON(p1, p2, p3));
 }
