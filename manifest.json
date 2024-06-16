@@ -1,8 +1,7 @@
   {
-    "kind": "column",
     "name": "Get pages from range",
     "description": "Gets pages from input ranges",
-    "author": "Kenny <kenny@archform.co>",
+    "author": "Kenny",
     "params": [
       {
         "name": "p1",
@@ -17,7 +16,7 @@
       {
         "name": "p3",
         "displayName": "Retainer",
-        "type": "boolean"
+        "type": "string"
       }
     ],
     "result": {
