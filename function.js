@@ -1,9 +1,10 @@
-window.function = function (p1, p2, p3) {
+window.function = function (p1, p2, p3 = { value: false }) {
   let result = [];
 
   // Convert string ranges to arrays of numbers
   let range1 = p1.split('-').map(Number);
   let range2 = p2.split('-').map(Number);
+  let p3 = false;
 
   // Determine the overall range
   let min = Math.min(range1[0], range2[0]);
