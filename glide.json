@@ -1,22 +1,28 @@
-{
-  "inputs": [
+[
+  {
+    "kind": "column",
+    "name": "Getages from",
+    "description": "Gets pages from input ranges",
+    "author": "Kenny <kenny@archform.co>",
+    "params": [
       {
-          "name": "stringInput",
-          "type": "string",
-          "description": "The string you want to extract the substring from"
+        "name": "p1",
+        "displayName": "Lower Arch Range",
+        "type": "string"
       },
       {
-          "name": "startIndex",
-          "type": "number",
-          "description": "The start index of the substring"
+        "name": "p2",
+        "displayName": "Upper Arch Range",
+        "type": "string"
       },
       {
-          "name": "endIndex",
-          "type": "number",
-          "description": "The end index of the substring"
+        "name": "p3",
+        "displayName": "Retainer",
+        "type": "boolean"
       }
-  ]
-  "result": {
+    ]
+    "result": {
       "type": "string"
-            }
-}
+    }
+  }
+]
